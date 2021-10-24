@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 16px;
+    height: calc(100vh - 32px);
+    width: calc(100vw - 32px);
+    display: flex;
+    flex-direction: column;
+}
+
+#chartContainer {
+    height: calc(100% - 32px);
+    top: 16px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.boundaryPolygon {
+    stroke: lightgrey;
+    fill: none;
+}
+
+.playerPolygon {
+    fill: rgba(120,250,220,.6);
+    stroke: none;
+}
+
+.leagueAveragePolygon {
+    stroke: brown;
+    stroke-dasharray: 3,3;
+    fill: none;
+}
+
+.axisLine {
+    stroke: lightgrey;
+}
+
+.grid {
+    flex-grow: 1;
+    overflow-y: hidden;
+    position: relative;
+    padding-top: 16px;
+    display: flex;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+}
+#pitcherSelectionContainer { 
+    width: 280px;
+    height: 100%; 
+    overflow-y: auto;
+    border: 1px solid grey;
+}
+
+#pitchFrequencyTable {
+    width: 440px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 4px 8px;
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid lightgrey;
+}
+
+td:nth-of-type(1) {
+    font-style: italic;
+    text-align: left;
+}
+
+th {
+    font-style: italic;
+    padding: 12px;
+}
+
+.explanationText {
+    font-size: 14px;
+    font-style: italic;
+    color: grey;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.playerSelectionButton {
+    width: 100%;
+    height: 24px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.playerSelectionButton:hover {
+    background-color: lightblue;
+}
+.playerIsSelected {
+    background-color: lightblue;
+    opacity: .8;
+}
+
+.playerSelectionButton:focus {
+    border: 1px solid lightgray;
+}

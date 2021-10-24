@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>2020 MLB pitchers' pitch selection</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class='container'>
+            <h1 class='title'>
+                Pitcher's pitch selection profiles for 2020
+            </h1>
+            <div class='grid'>
+                <div id='pitcherSelectionContainer'></div>
+                <div id='chartContainer'></div>
+                <div id='tableContainer'>
+                    <table id='pitchFrequencyTable'>
+                    </table>
+                    <p class='explanationText'>Pitch usage as a percentage of total pitches thrown</p>
+                </div>
+            </div>
+        </div>
+        <script src='https://d3js.org/d3.v4.min.js'></script>
+        <script src='./pitchSelectionProfile.js'></script>
+    </body>
+</html>
