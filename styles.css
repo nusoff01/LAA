@@ -55,7 +55,8 @@ body {
     font-weight: normal;
 }
 #pitcherSelectionContainer { 
-    width: 280px;
+    width: 240px;
+    margin-right: 24px;
     height: 100%; 
     overflow-y: auto;
     border: 1px solid grey;
@@ -63,6 +64,7 @@ body {
 
 #pitchFrequencyTable {
     width: 440px;
+    margin-left: 24px;
 }
 
 table {

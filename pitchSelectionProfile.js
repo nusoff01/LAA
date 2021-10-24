@@ -65,7 +65,8 @@ function drawRadarGraph (playerPitches, leagueAveragePitches, containerId) {
             const y = getY(i, playerPitches.length);
             const rotation = 90 - (360 * (i / playerPitches.length));
             return `translate(${x},${y}) rotate(${rotation})`;
-        });
+        })
+        .attr('y', "-4");
     axisText.exit().remove();
 
 
